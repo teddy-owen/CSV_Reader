@@ -1,6 +1,10 @@
 # CSV Reader
 React-Redux app to filter, sort and read CSV files with headers
 
+<img src="https://github.com/teddy-owen/CSV_Reader/blob/master/img/snip1.PNG" alt="drawing" height="450px" width="550px"/>
+<img src="https://github.com/teddy-owen/CSV_Reader/blob/master/img/snip2.PNG" alt="drawing" height="450px" width="550px"/>
+<img src="https://github.com/teddy-owen/CSV_Reader/blob/master/img/snip3.PNG" alt="drawing" height="450px" width="550px"/>
+
 ### Requirements
 - NodeJS
 - NPM
