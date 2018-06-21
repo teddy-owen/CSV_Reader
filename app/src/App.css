@@ -32,6 +32,19 @@ html, body{
   to { transform: rotate(360deg); }
 }
 
+.table-main{
+  overflow: hidden;
+}
+
+.table-container{
+  overflow: scroll;
+  height:55vh;
+  overflow-y:auto;
+  overflow-x:auto;
+  width:100%;
+}
+
+
 .table-header:hover{
   background-color: white;
   color: black;
@@ -71,18 +84,10 @@ select:hover{
 }
 
 
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-
 .lds-blocks-svg{
   position: absolute;
   left: 50%;
   top: 40%;
   margin: -75px 0 0 -100px;
   z-index: 2;
-  /*animation: spin 25s linear infinite;*/
 }

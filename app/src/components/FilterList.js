@@ -7,7 +7,11 @@ const FilterList = ({filters,deleteFilter}) => {
 	const rows = filters ? filters.map((filter,index) => (<tr key={filter.id}>
 		<td>Filter {index+1}</td>
 		<td>{`${filter.by} ${filter.on} ${filter.string}`}</td>
-		<td className="py-2"><button data-id={filter.id} onClick={deleteFilter} className="btn btn-outline-danger border-0"><i className="far fa-trash-alt"></i></button></td>
+		<td className="py-2">
+			<button data-id={filter.id} onClick={deleteFilter} className="btn btn-outline-danger border-0">
+				<i className="far fa-trash-alt"></i>
+			</button>
+		</td>
 	</tr>)) : null;
 
 	return (

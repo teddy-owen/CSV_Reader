@@ -18,27 +18,27 @@ const Table = ({data,filters,sort,tableFilter,tableSorter,changeSort}) => {
 	return (		
 
 
-		<div className="w-100">
-
-
+		<div className="table-main">
 			<h4 className="float-left border border-info rounded">
 				<span className="badge badge-info bg-transparent ">{filteredData.length} Results</span>
 			</h4>
 			
 			<File/>
 
-			<table className="table table-dark table-striped rounded">
-				<thead>
-					<tr>
-						{header}
-					</tr>
-				</thead>
-				<tbody>
+			<div className="table-container">
+				<table className="table table-dark table-striped rounded">
+					<thead>
+						<tr>
+							{header}
+						</tr>
+					</thead>
+					<tbody>
 
-					{rows}
-				
-				</tbody>
-			</table>
+						{rows}
+					
+					</tbody>
+				</table>
+			</div>
 		</div>
 
 		);

@@ -65,9 +65,7 @@ function mapStateToProps(state){
 
 
 function mapDipsatchToProps(dispatch){
-  return{
-    // changeSort:(cat) => dispatch(changeSort(cat)),
-  };
+  return{};
 }
 
 const AppContainer = connect(mapStateToProps,mapDipsatchToProps)(App);

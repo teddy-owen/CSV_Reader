@@ -1,11 +1,9 @@
 import React from 'react';
 import  {connect} from 'react-redux';
 import {updateData,clearFilterInput,deleteAllFilters,changeSort,loadToggle} from '../actions/actionCreators';
-import csv from 'csvtojson';
 
 
 const File = ({data,readFile}) => {
-
 
 	return (		
 
@@ -19,7 +17,7 @@ const File = ({data,readFile}) => {
 		);
 };
 
-async function readFile(file,dispatch){
+function readFile(file,dispatch){
 	if(!file){
 		return;
 	}
@@ -44,26 +42,6 @@ async function readFile(file,dispatch){
 		};
 		myWorker.postMessage(text);
 
-		// try{
-		// 	csv()
-		// 	.fromString(text)
-		// 	.on('error',(err)=>{
-		// 	    console.error(err);
-		// 	    alert("Incorrect file layout. Please upload a CSV with headers.");
-		// 	})
-		// 	.then((jsonObj)=>{
-		// 	    const defaultCol = Object.keys(jsonObj[0])[0];
-		// 	    dispatch(updateData(jsonObj));
-		// 	    dispatch(deleteAllFilters());
-		// 	    dispatch(changeSort(defaultCol));
-		// 	    dispatch(clearFilterInput(defaultCol));
-  //   			console.log("Done loading");
-  //   			dispatch(loadToggle());
-		// 	});
-		// }
-		// catch(error){
-		// 	console.error(error);
-		// }
 	}
 
 	reader.readAsText(file);
